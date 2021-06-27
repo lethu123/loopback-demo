@@ -1,0 +1,24 @@
+{
+  "task": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb+srv://darkcompet:darkcompet@task.2cnic.mongodb.net/TodoApp?retryWrites=true&w=majority",
+    "database": "",
+    "password": "",
+    "name": "task",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  },
+  "data": {
+    "host": "",
+    "port": 0,
+    "url": "mongodb+srv://darkcompet:darkcompet@task.2cnic.mongodb.net/TodoApp?retryWrites=true&w=majority",
+    "database": "",
+    "password": "",
+    "name": "data",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
+  }
+}

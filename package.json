@@ -1,0 +1,75 @@
+{
+  "name": "boilerplate-loopback",
+  "version": "1.1.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "description": "A boilerplate for a RESTful API (api only) using LoopBack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tientran0019/boilerplate-loopback"
+  },
+  "author": "Trần Đức Tiến <tientran0019@gmail.com>",
+  "keywords": [
+    "api",
+    "boilerplate",
+    "loopback",
+    "webpack",
+    "nodemon",
+    "babel"
+  ],
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "lint": "eslint .",
+    "posttest": "npm run lint && nsp check",
+    "start": "npm run dev",
+    "dev": "nodemon . --exec babel-node",
+    "prod": "NODE_ENV=production babel-node .",
+    "prod:pm2": "NODE_ENV=production pm2 start src/server.js --name loopback-boilerplate --interpreter babel-node"
+  },
+  "dependencies": {
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.4.1",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "dayjs": "^1.10.4",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "fb": "^2.0.0",
+    "google-auth-library": "0.12.0",
+    "helmet": "^4.5.0",
+    "lodash": "^4.17.21",
+    "loopback": "^3.28.0",
+    "loopback-boot": "^3.3.1",
+    "loopback-component-explorer": "^6.5.1",
+    "loopback-component-storage": "^3.7.0",
+    "loopback-connector-mongodb": "^5.5.0",
+    "loopback-counts-mixin": "^1.0.1",
+    "morgan": "^1.10.0",
+    "pretty-error": "^3.0.3",
+    "serve-favicon": "^2.5.0",
+    "slugify": "^1.5.0",
+    "strong-error-handler": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.13.16",
+    "@babel/node": "^7.13.13",
+    "@babel/plugin-proposal-optional-chaining": "^7.13.12",
+    "@babel/preset-env": "^7.13.15",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-loopback": "^13.1.0",
+    "eslint-import-resolver-babel-module": "^5.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.7",
+    "nsp": "^3.2.1"
+  }
+}
